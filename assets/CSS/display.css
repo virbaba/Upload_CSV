@@ -1,0 +1,171 @@
+/* Style for the controls container */
+#controlsContainer {
+      display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+}
+
+/* Style for the column list container */
+#columnListContainer {
+    margin-right: 10px;
+}
+
+/* Style for the column list label */
+#columnListContainer label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the column list */
+#columnList {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the "Create Chart" button */
+#createChartButton {
+    margin-bottom: 10px;
+}
+
+/* Style for the chart container */
+#chart{
+    position: absolute;
+    display: none;
+    top: 10;
+    left: 10;
+    z-index: 2;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+/* css for search button */
+#searchContainer {
+    display: inline-block;
+    position: relative;
+    left: 65%;
+    background-color: #e6e8eb;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+
+    padding: 5px 10px;
+    margin-bottom: 20px;
+
+    /* make search box right align */
+    width: 300px;
+}
+
+/* hide button */
+#hide{
+    position: absolute;
+    top: 1;
+    right: 5;
+    margin: 20px;
+    z-index: 3;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    padding: 8px;
+
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+
+    width: 100%;
+}
+
+#searchInput::placeholder {
+    color: #6c757d;
+}
+
+button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    #searchContainer {
+        max-width: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+thead{
+    background-color: #6c757d;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    vertical-align: middle; /* Center content vertically */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    max-width: 20px;
+}
+
+button {
+    font-size: 12px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+/* Style for alternating row colors */
+tr.even {
+    background-color: #eae7e7;
+}
+
+/* asc and desc image */
+img{
+    width: 15px;
+    height: 15px;
+}
+
+
+/* navigation button CSS */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+}
+
+
+
+
+

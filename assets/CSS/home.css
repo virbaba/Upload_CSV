@@ -1,0 +1,108 @@
+#root{
+    display: flex;
+    margin: 20px;
+}
+
+/* form that upload the csv file */
+#form-container{
+    width: 40%;
+
+    padding: 10px;
+    margin: 10px;
+
+    background-color: black;
+    box-shadow: 1px 2px 8px 4px chartreuse;
+    color : white;
+
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* file continer */
+.container {
+    width: 55%;
+    margin: 10px;
+
+    box-shadow: 1px 2px 8px 4px chartreuse;
+
+    background-color: black;
+    color: white;
+
+    padding: 5px;
+    border-radius: 20px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.file-info {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.file-icon {
+    width: 100px; 
+    height: 100px;
+}
+
+
+.file-name {
+    color: rgb(164, 137, 137);
+    font-size: 18px;
+
+    padding: 5px;
+    width: 100px;
+    margin-left: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #root {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #form-container{
+        width: 90%;
+
+    }
+    .container{
+        width: 90%;
+    }
+}

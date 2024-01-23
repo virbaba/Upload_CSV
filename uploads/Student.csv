@@ -1,0 +1,16 @@
+Student ID,Student Name,College,Placed,DSA Final Score,WebD Final Score,React Final Score,Company,Role,Interview Result,
+1,Virender Singh,KCRI College,Yes,500,400,300,Microsoft,Designer,pass,Placed
+2,Deepak Singh,RR College,No,400,550,330,Microsoft,Developer,hold,No
+3,Mohit Singh,Shubharti College,Yes,450,640,400,Apple,Architecture,pass,Placed
+4,Manbir Singh,Hapur College,Yes,650,450,600,Google,CEO,pass,Placed
+5,Arvind,Tyodi College,No,400,300,200,,,fail,No
+6,Shiv,RTU,YES,600,700,800,Apple,SDE,pass,Placed
+7,Jyoti,LPU,NO,500,400,200,,,fail,
+8,Ankur,AMITY,YES,700,700,700,Google,SDE,pass,Placed
+9,Priya,IIM,NO,400,300,200,,,fail,
+10,Rohan,IIT,YES,800,900,900,Microsoft,SDE,pass,Placed
+11,Anshu,DU,NO,100,200,200,,,fail,
+12,Sorabh,AKTU,NO,100,200,100,,,,
+13,Arun,SSID,NO,100,200,100,,,,
+14,Dipali,SSOD,Yes,600,800,900,Netflix,SDE,pass,Placed
+15,Rohni,ROM,NO,100,200,100,,,,

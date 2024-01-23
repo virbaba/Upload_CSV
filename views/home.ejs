@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/CSS/home.css">
+<div id="root">
+    <div id="form-container">
+
+        <h1>Upload CSV File</h1>
+        <!-- form to upload only csv file -->
+        <form action="/upload/file" method="post" enctype="multipart/form-data">
+            <label for="csvFile">Select a CSV file:</label>
+            <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+            <br>
+            <input type="submit" value="Upload CSV">
+        </form>
+
+    </div>
+    
+<!-- contianer that hold the list of file -->
+    <div class="container">
+        <h1>Uploaded Files</h1>
+            <div class="file-info">
+                <% Files.forEach(file => { %>
+                            <div class="files" id="file1">
+                                <a href="/file/display/<%=file %>"><img src="https://cdn-icons-png.flaticon.com/128/6133/6133884.png" alt="CSV Icon" class="file-icon"> <br>
+                                <div class="file-name" id="fileName"><%= file %></div>
+                                </a>
+                            </div>
+                <% }); %>
+            </div>
+    </div>
+
+</div>
+
+
+<script src="/javascript/home.js" type="text"></script>

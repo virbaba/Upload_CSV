@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/CSS/display.css">
+<!-- This liabrary for bar chart -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- create chart button-->
+<button id="createChartButton">Create Bar Chart</button>
+
+<!-- Container for column list and create button -->
+<div id="controlsContainer">
+    <!-- Column list -->
+    <div id="columnListContainer">
+        <label for="columnList">Select a Column:</label>
+        <select id="columnList"></select>
+    </div> <br>
+
+    <!-- Create button -->
+    <button id="createChart">Create Chart</button>
+</div>
+
+<!-- Search Bar -->
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search By Name...">
+</div>
+
+<!-- Table that contain the data of CSV file -->
+<table id="dataTable">
+    <!-- filling the header -->
+    <thead>
+        <tr>
+            <% header.forEach((cell, index) => { %>
+                <th>
+                    <!-- Ascending link -->
+                    <span class="asc-icon sort-icon" data-index="<%= index %>" style="cursor: pointer; color: green;" title="Ascending">▲</span>
+                    <%= cell %>
+                    <!-- Descending link -->
+                    <span class="desc-icon sort-icon" data-index="<%= index %>" style="cursor: pointer; color: red;" title="Descending">▼</span>
+                </th>
+                
+            <% }); %>
+        </tr>
+        
+    </thead>
+
+<!-- Filling the content -->
+    <tbody>
+        <% content.forEach((row, index) => { %>
+            <tr class="<%= index % 2 === 0 ? 'even' : 'odd' %>">
+                <% row.forEach(cell => { %>
+                    <td><%= cell %></td>
+                <% }); %>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+
+<!-- chart container -->
+<div id="chart">
+    <button id="hide">Hide</button>
+    <div id="chartContainer">
+    
+    </div>
+</div>
+
+
+<!-- button for page navigation previous and next -->
+<div class="pagination">
+    <button id="prev-btn">Previous</button>
+    <span class="page-numbers"></span>
+    <button id="next-btn">Next</button>
+</div>
+
+<!-- script for display the content according to search or front end search -->
+<script src="/javascript/display.js" type="text/javascript"></script>
+<!-- script for sort the data according to column data -->
+<script src="/javascript/display_sort.js" type="text/javascript"></script>
+<!-- script for paginantion -->
+<script src="/javascript/navigatePage.js" type="text/javascript"></script>
+<!-- script for d3.js bar chart for selected column -->
+<script src="/javascript/chart.js" type="text/javascript"></script>
